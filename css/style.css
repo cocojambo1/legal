@@ -1,0 +1,164 @@
+.body {
+  font-family: Roboto; }
+
+.label {
+  width: 100%;
+  height: 42px;
+  margin: 100px 0;
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #99671C;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px; }
+
+.bg_1 {
+  background-image: url("../asets/about/kak-osporit-zaklyuchenie-sudebno-meditsinskoy-ekspertizy-pri-dtp.jpg"); }
+
+.bg_2 {
+  background-image: url("../asets/about/1062011.jpg"); }
+
+.bg_3 {
+  background-image: url("../asets/about/31764614_l.jpg"); }
+
+.bg_4 {
+  background-image: url("../asets/about/D7JdgtvV4AA4D9R.jpg"); }
+
+.bg_5 {
+  background-image: url("../asets/about/sud-1.jpg"); }
+
+.bg_6 {
+  background-image: url("../asets/about/zaemshhik.jpg"); }
+
+.bg_7 {
+  background-image: url("../asets/about/dengi-pod-zalog-nedvizhimosti.jpg"); }
+
+.bg_8 {
+  background-image: url("../asets/about/brak.jpg"); }
+
+.bg_9 {
+  background-image: url("../asets/about/3255_0d616d856aff9fe0be2cb84eb6ace0be.jpg"); }
+
+.content {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .content__item {
+    position: relative;
+    border-radius: 10px;
+    width: 280px;
+    height: 350px;
+    cursor: pointer;
+    margin-bottom: 50px; }
+    .content__item:hover .content__hover {
+      opacity: 1; }
+    .content__item:hover .content__title {
+      color: #fff;
+      -webkit-transition: all 1s;
+      -o-transition: all 1s;
+      transition: all 1s; }
+  .content__body {
+    border-radius: 20px;
+    width: 280px;
+    height: 100%; }
+  .content__hover {
+    opacity: 0;
+    -webkit-transition: visibility ease 0s, opacity ease 1s;
+    -o-transition: visibility ease 0s, opacity ease 1s;
+    transition: visibility ease 0s, opacity ease 1s;
+    position: absolute;
+    width: 280px;
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.77);
+    border-radius: 20px; }
+  .content__img {
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 280px;
+    height: 350px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 20px; }
+  .content__text {
+    max-width: 255px;
+    margin-top: 50px;
+    margin-left: 10px; }
+
+.content__title {
+  font-family: Roboto;
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: 31px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  color: #000;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  text-shadow: 0 4px 4px rgba(255, 255, 255, 0.15); }
+
+.item {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 20px; }
+
+@media screen and (max-width: 1380px) {
+  .content {
+    max-width: 970px; } }
+
+@media screen and (max-width: 1005px) {
+  .content {
+    max-width: 670px;
+    padding: 0 20px; } }
+
+@media screen and (max-width: 630px) {
+  .content {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; } }

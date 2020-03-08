@@ -1,0 +1,170 @@
+$color_1: #fff;
+$color_2: #000;
+$color_3: rgba(255, 255, 255, 0.15);
+$color_4: rgba(0, 0, 0, 0.77);
+
+.body {
+  font-family: Roboto;
+}
+
+.label {
+  width: 100%;
+  height: 42px;
+  margin: 100px 0;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #99671C;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.bg_1 {
+  background-image: url("../asets/about/kak-osporit-zaklyuchenie-sudebno-meditsinskoy-ekspertizy-pri-dtp.jpg");
+}
+
+.bg_2 {
+  background-image: url("../asets/about/1062011.jpg");
+}
+
+.bg_3 {
+  background-image: url("../asets/about/31764614_l.jpg");
+}
+
+.bg_4 {
+  background-image: url("../asets/about/D7JdgtvV4AA4D9R.jpg");
+}
+
+.bg_5 {
+  background-image: url("../asets/about/sud-1.jpg");
+}
+
+.bg_6 {
+  background-image: url("../asets/about/zaemshhik.jpg");
+}
+
+.bg_7 {
+  background-image: url("../asets/about/dengi-pod-zalog-nedvizhimosti.jpg");
+}
+.bg_8 {
+  background-image: url("../asets/about/brak.jpg");
+}
+.bg_9 {
+  background-image: url("../asets/about/3255_0d616d856aff9fe0be2cb84eb6ace0be.jpg");
+}
+
+.content {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__item {
+    position: relative;
+    border-radius: 10px;
+    width: 280px;
+    height: 350px;
+    cursor: pointer;
+    margin-bottom: 50px;
+
+    &:hover {
+      .content__hover {
+        opacity: 1;
+      }
+
+      .content__title {
+        color: $color_1;
+        transition: all 1s;
+      }
+    }
+  }
+
+  &__body {
+    border-radius: 20px;
+    width: 280px;
+    height: 100%;
+  }
+
+  &__hover {
+    opacity: 0;
+    transition: visibility ease 0s, opacity ease 1s;
+    position: absolute;
+    width: 280px;
+    height: 350px;
+    background-color: $color_4;
+    border-radius: 20px;
+  }
+
+  &__img {
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 280px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+  }
+
+  &__text {
+    max-width: 255px;
+    margin-top: 50px;
+    margin-left: 10px;
+  }
+}
+
+.content__title {
+  font-family: Roboto;
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 31px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  color: $color_2;
+  transition: all 1s;
+  text-shadow: 0 4px 4px $color_3;
+}
+
+.item {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: $color_1;
+  margin-bottom: 20px;
+}
+
+@media screen and ( max-width: 1380px ) {
+  .content {
+    max-width: 970px;
+  }
+}
+
+@media screen and ( max-width: 1005px ) {
+  .content {
+    max-width: 670px;
+    padding: 0 20px;
+  }
+}
+
+@media screen and ( max-width: 630px ) {
+  .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
