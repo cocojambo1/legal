@@ -150,6 +150,11 @@ $color_5: #f39c12;
   }
 }
 
+.active {
+  transform: translateX( 100% );
+  transition: all 1s;
+}
+
 @media screen and (max-width: 1440px) {
   .head {
     &__item {

@@ -10,7 +10,35 @@
     <link rel="stylesheet" href="css/nullstyle.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/sub-header.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/footer.css">
     <title>Legal Assistant</title>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=82c62558-87b4-46a0-adbb-1dcf904501c5&lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript">
+        ymaps.ready(init);
+        function init(){
+            const myMap = new ymaps.Map( 'map', {
+                center: [ 55.669925, 37.632520 ],
+                zoom: 17
+            } )
+
+            myMap.geoObjects
+                .add( new ymaps.Placemark( [ 55.669925, 37.632520 ] ) )
+        }
+    </script>
+
+    <meta name="description" content="Сайт для оказывания юридической помощи всем желающим" >
+
+    <meta name="keywords" content="юрист, юридические услуги, гражданское дело" >
+
+    <meta name="Author" content="Вовк Олег" >
+
+    <meta name="Copyright" content="Вовк Олег" >
+
+    <meta name="Address" content="115230, г. Москва, Хлебозаводский проезд д. 7" >
+    <script src="../../AppData/Local/Temp/Rar$DRa13704.47670/js/form.js"></script>
+    <script src="../form.js"></script>
 </head>
 
 <body>
@@ -39,19 +67,19 @@
                     <div class="head__menu">
                         <ul class="head__list">
                             <li class="head__link margin">
-                                <a href="#" class="head__item" data-hover="Главная страница" > Главная страница </a>
+                                <a href="#global" class="head__item global" data-hover="Главная" > Главная </a>
                             </li>
 
                             <li class="head__link margin">
-                                <a href="#" class="head__item" data-hover="Услуги" > Услуги </a>
+                                <a href="#services" class="head__item" data-hover="Услуги" > Услуги </a>
                             </li>
 
                             <li class="head__link margin">
-                                <a href="#" class="head__item" data-hover="Задать вопрос" > Задать вопрос </a>
+                                <a href="#question" class="head__item" data-hover="Задать вопрос" > Задать вопрос </a>
                             </li>
 
                             <li class="head__link margin">
-                                <a href="#" class="head__item" data-hover="Контакты" > Контакты  </a>
+                                <a href="#contact" class="head__item" data-hover="Контакты" > Контакты  </a>
                             </li>
                         </ul>
                     </div>
@@ -59,7 +87,7 @@
             </div>
         </header>
 
-        <div class="sub-header">
+        <div id="global" class="sub-header section">
             <div>
                 <p class="title"> Legal Assistant </p>
             </div>
@@ -70,173 +98,313 @@
         <!-- CONTENT -->
 
         <nav>
-            <div class="label"> Услуги </div>
+            <div id="services" class="section" >
+                <div class="label"> Услуги </div>
 
-            <div class="content">
+                <div class="content">
 
-                <div class="content__item">
-                    <div class="content__body">
-                        <div class="content__img bg_1"></div>
+                    <div class="content__item content__item_margin">
+                        <div class="content__body">
+                            <div class="content__img bg_1"></div>
 
-                        <p class="content__title" > Автоюрист </p>
+                            <p class="content__title" > Автоюрист </p>
 
-                        <div class="content__hover">
-                            <div class="content__text">
-                                <p class="item" > Споры со страховой </p>
-                                <p class="item" > Взыскание страхового возмещения </p>
+                            <div class="content__hover">
+                                <div class="content__text">
+                                    <p class="item" > Споры со страховой компанией, КАСКО, ОСАГО, ДСАГО </p>
+                                    <p class="item" > Взыскание страхового возмещения, штрафов, процентов, неустоек </p>
+                                    <p class="item" > Досудебное урегулирование споров, претензии, жалобы ЦБ РФ </p>
+                                    <p class="item" > Составление обращений финансовому уполномомченному (СОДФУ) </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content__item content__item_margin">
+                        <div class="content__body">
+                            <div class="content__img bg_2"></div>
+
+                            <p class="content__title" > Недвижимость </p>
+
+                            <div class="content__hover">
+                                <div class="content__text">
+                                    <p class="item" > Представление интересов клиента в суде </p>
+                                    <p class="item" > Составление договоров </p>
+                                    <p class="item" > Регестрация прав </p>
+                                    <p class="item" > Приватизация </p>
+                                    <p class="item" > Взыскание неустоек по ДДУ </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content__item content__item_margin">
+                        <div class="content__body">
+                            <div class="content__img bg_3"></div>
+
+                            <p class="content__title" > Арбитраж </p>
+
+                            <div class="content__hover">
+                                <div class="content__text">
+                                    <p class="item" > Взыскание задолженности </p>
+                                    <p class="item" > Досудебное урегулирование споров </p>
+                                    <p class="item" > Оспаривание дел </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content__item content__item_margin">
+                        <div class="content__body">
+                            <div class="content__img bg_4"></div>
+
+                            <p class="content__title" > Приставы </p>
+
+                            <div class="content__hover">
+                                <div class="content__text">
+                                    <p class="item" > Сопровождение исполнительного производства </p>
+                                    <p class="item" > Обжалование незаконных действий ФССП </p>
+                                    <p class="item" > Прекращение исполнительного производства </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content__item content__item_margin">
+                        <div class="content__body">
+                            <div class="content__img bg_5"></div>
+
+                            <p class="content__title" > Административное производство </p>
+
+                            <div class="content__hover">
+                                <div class="content__text">
+                                    <p class="item" > Составление жалоб, обжалование постановлений и протоколов </p>
+                                    <p class="item" > Представление интересов в суде </p>
+                                    <p class="item" > Разбор по делам об административных правонарушениях </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content__item content__item_margin">
+                        <div class="content__body">
+                            <div class="content__img bg_6"></div>
+
+                            <p class="content__title" > Досудебное урегулирование </p>
+
+                            <div class="content__hover">
+                                <div class="content__text">
+                                    <p class="item" > Составление претензий </p>
+                                    <p class="item" > Составление запросов </p>
+                                    <p class="item" > Составление жалоб </p>
+                                    <p class="item" > Участие в переговорах </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content__item content__item_margin">
+                        <div class="content__body">
+                            <div class="content__img bg_7"></div>
+
+                            <p class="content__title" > Займы </p>
+
+                            <div class="content__hover">
+                                <div class="content__text">
+                                    <p class="item" > Взыскание задолженности </p>
+                                    <p class="item" > Оформление сделок </p>
+                                    <p class="item" > Регистрация залогов </p>
+                                    <p class="item" > Представление интересов в ФССП России </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content__item content__item_margin">
+                        <div class="content__body">
+                            <div class="content__img bg_8"></div>
+
+                            <p class="content__title" > Семейный юрист </p>
+
+                            <div class="content__hover">
+                                <div class="content__text">
+                                    <p class="item" > Представление интересов в суде </p>
+                                    <p class="item" > Подготовка проекта мирового соглашения </p>
+                                    <p class="item" > Раздел совместно нажитого имущества </p>
+                                    <p class="item" > Определение порядка общения с ребенком </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content__item">
+                        <div class="content__body">
+                            <div class="content__img bg_9"></div>
+
+                            <p class="content__title" > Документы онлайн </p>
+
+                            <div class="content__hover">
+                                <div class="content__text">
+                                    <p class="item" > Подготовка и составление юридических документов удаленно </p>
+                                    <p class="item" > Письменные консультации </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content__item">
+                        <div class="content__body">
+                            <div class="content__img bg_10"></div>
+
+                            <p class="content__title" > Кредиты и Должники </p>
+
+                            <div class="content__hover">
+                                <div class="content__text">
+                                    <p class="item" > Оспаривание суммы долга и ее фиксация </p>
+                                    <p class="item" > Подготовка жалоб на Банки и Коллекторов. Аргументированный и законный ответ на незаконные действия. </p>
+                                    <p class="item" > Судебные приказы. Оспаривание судебных приказов. Приостановка и окончание исполнительных производств ФССП. </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="content__item">
-                    <div class="content__body">
-                        <div class="content__img bg_2"></div>
+            <div id="question" class="section" >
+                <div class="label"> Задать вопрос </div>
 
-                        <p class="content__title" > Недвижимость </p>
+                <div class="form">
+                    <form class="form__wrapper" id="mailForm" enctype="multipart/form-data" >
+                        <p class="form__title"> Задать вопрос </p>
 
-                        <div class="content__hover">
-                            <div class="content__text">
-                                <p class="item" > Составление договоров </p>
-                                <p class="item" > Регестрация прав </p>
-                                <p class="item" > Приватизация </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                        <div class="form__container">
+                            <div class="input">
+                                <div class="input__wrapper name">
+                                    <input id="name" type="text" autoComplete="off" required name="name" >
 
-                <div class="content__item">
-                    <div class="content__body">
-                        <div class="content__img bg_3"></div>
+                                    <label class="labelName" for="name" >
+                                        <span class="contentName"> Ваше имя </span>
+                                    </label>
+                                </div>
 
-                        <p class="content__title" > Арбитраж </p>
+                                <div class="input__wrapper email">
+                                    <input id="email" type="text" autoComplete="off" required name="email" >
 
-                        <div class="content__hover">
-                            <div class="content__text">
-                                <p class="item" > Взыскание задолженности </p>
-                                <p class="item" > Досудебное урегулирование споров </p>
-                                <p class="item" > Оспаривание дел </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                                    <label class="labelName" for="email" >
+                                        <span class="contentName"> Email </span>
+                                    </label>
+                                </div>
 
-                <div class="content__item">
-                    <div class="content__body">
-                        <div class="content__img bg_4"></div>
+                                <div class="input__wrapper phone">
+                                    <input id="phone" type="text" autoComplete="off" required name="phone" >
 
-                        <p class="content__title" > Приставы </p>
+                                    <label class="labelName" for="phone" >
+                                        <span class="contentName"> Телефон </span>
+                                    </label>
+                                </div>
 
-                        <div class="content__hover">
-                            <div class="content__text">
-                                <p class="item" > Принципиальная позиция </p>
-                                <p class="item" > Обжалование незаконных действий ФССП </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                                <div class="input__wrapper subject">
+                                    <input id="subject" type="text" autoComplete="off" required name="subject" >
 
-                <div class="content__item">
-                    <div class="content__body">
-                        <div class="content__img bg_5"></div>
+                                    <label class="labelName" for="subject" >
+                                        <span class="contentName"> Тема </span>
+                                    </label>
+                                </div>
 
-                        <p class="content__title" > Административное производство </p>
+                                <div class="textarea__wrapper mess">
+                                    <div class="group">
+                                        <textarea id="mess" name="mess" required ></textarea>
 
-                        <div class="content__hover">
-                            <div class="content__text">
-                                <p class="item" > Составление жалоб </p>
-                                <p class="item" > Представление интересов в суде </p>
-                                <p class="item" > Действия/бездействия судебного пристава </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                                        <span class="bar" ></span>
 
-                <div class="content__item">
-                    <div class="content__body">
-                        <div class="content__img bg_6"></div>
-
-                        <p class="content__title" > Досудебное урегулирование </p>
-
-                        <div class="content__hover">
-                            <div class="content__text">
-                                <p class="item" > Дорожные службы </p>
-                                <p class="item" > Управляющие компании </p>
-                                <p class="item" > Составление жалоб </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="content__item">
-                    <div class="content__body">
-                        <div class="content__img bg_7"></div>
-
-                        <p class="content__title" > Займы </p>
-
-                        <div class="content__hover">
-                            <div class="content__text">
-                                <p class="item" > Оформление сделок </p>
-                                <p class="item" > Регистрация залогов </p>
-                                <p class="item" > Взыскание задолженности </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="content__item">
-                    <div class="content__body">
-                        <div class="content__img bg_8"></div>
-
-                        <p class="content__title" > Семейный юрист </p>
-
-                        <div class="content__hover">
-                            <div class="content__text">
-                                <p class="item" > Брачный договор </p>
-                                <p class="item" > Алименты </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="content__item">
-                    <div class="content__body">
-                        <div class="content__img bg_9"></div>
-
-                        <p class="content__title" > Документы онлайн </p>
-
-                        <div class="content__hover">
-                            <div class="content__text">
+                                        <label for="mess" class="mess__label" > Ваше сообщение </label>
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
+
+                        <div class="form__btn">
+                            <button id="btn" type="button" >
+                                Отправить
+                            </button>
+                        </div>
+
+                    </form>
+
+                    <!-- ERROR -->
+
+                    <div class="e" >
+                        <div class="e__label" >
+                            <div class="e__img" ></div>
+                        </div>
+                        <p> Пожалуйста заполните все поля </p>
+                    </div>
+
+                    <!-- SUBMIT -->
+
+                    <div class="submit" >
+                        <p> Все прошло успешно </p>
                     </div>
                 </div>
+            </div>
 
+            <div id="contact" class="section" >
+                <div class="label"> Мы на карте </div>
+
+                <div class="map" >
+                    <div id="map" style="max-width: 1300px; width: 100%; height: 500px"></div>
+                </div>
             </div>
         </nav>
 
+        <footer >
+            <div class='footer' >
+                <div class='footer__container' >
+                    <div class='row' >
+                        <p class='footer__title' > Как со мной связаться ? </p>
+
+                        <div class='row__info' >
+                            <div class='row__item' >
+                                <img src="asets/icons/whatsap.png" alt=""/>
+                                <p class='footer__item' > + 7 (903) 406-70-51 </p>
+                            </div>
+
+                            <div class='row__item' >
+                                <img src="asets/icons/whatsapp.png" alt=""/>
+                                <p class='footer__item' > + 7 (903) 406-70-51 </p>
+                            </div>
+
+                            <div class='row__item' >
+                                <img src="asets/icons/gmail.png" alt=""/>
+                                <p class='footer__item' > Vovkoleg86@yandex.ru </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='row' >
+                        <p class='footer__title' > Адрес </p>
+                        <p class='item' > 115230, г. Москва, Хлебозаводский проезд д. 7 </p>
+                    </div>
+
+                    <div class='row' >
+                        <p class='footer__title' > График работы </p>
+
+                        <div class='row__info' >
+                            <p class='footer__item' > Пн. Пт. с 9:00 до 20:00 </p>
+                            <p class='footer__item' > Онлайн - круглосуточно </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" ></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="jquery.textarea_autosize.min.js"></script>
+
     <script src="js/form.js" ></script>
     <script src="js/header.js"></script>
 </body>

@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="222dce1e-30cb-4a50-b7f3-53687be389c7" name="Default Changelist" comment="" />
+    <list default="true" id="222dce1e-30cb-4a50-b7f3-53687be389c7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asets/icons/whatsapp (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prepros-6.config" beforeDir="false" afterPath="$PROJECT_DIR$/prepros-6.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/form.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/style.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Yq4PE7xhGFfhYSDFaTaaVa9awK" />
   <component name="ProjectViewState">
@@ -15,6 +32,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="SvnConfiguration">
@@ -30,10 +48,31 @@
       <workItem from="1583656765685" duration="3258000" />
       <workItem from="1583660870583" duration="2192000" />
       <workItem from="1583669333321" duration="6321000" />
+      <workItem from="1583678415118" duration="3965000" />
+      <workItem from="1583688340285" duration="3898000" />
+      <workItem from="1583831258493" duration="14233000" />
+      <workItem from="1583933204170" duration="9807000" />
+      <workItem from="1584024967725" duration="5269000" />
+      <workItem from="1584111161200" duration="4755000" />
+      <workItem from="1584268756011" duration="2614000" />
+      <workItem from="1584890106565" duration="152000" />
+      <workItem from="1584891852521" duration="1031000" />
+      <workItem from="1584893886598" duration="1024000" />
+      <workItem from="1588568742430" duration="875000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1180" y="237" key="FileChooserDialogImpl" timestamp="1583831273130">
+      <screen x="-1920" y="-24" width="1920" height="1040" />
+    </state>
+    <state x="-1180" y="237" key="FileChooserDialogImpl/0.40.1280.984/-1920.-24.1920.1040@-1920.-24.1920.1040" timestamp="1583831273130" />
+    <state x="-1297" y="201" width="672" height="678" key="search.everywhere.popup" timestamp="1584111405369">
+      <screen x="-1920" y="-24" width="1920" height="1040" />
+    </state>
+    <state x="-1297" y="201" width="672" height="678" key="search.everywhere.popup/0.40.1280.984/-1920.-24.1920.1040@-1920.-24.1920.1040" timestamp="1584111405369" />
   </component>
 </project>

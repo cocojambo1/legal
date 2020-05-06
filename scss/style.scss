@@ -2,6 +2,12 @@ $color_1: #fff;
 $color_2: #000;
 $color_3: rgba(255, 255, 255, 0.15);
 $color_4: rgba(0, 0, 0, 0.77);
+$color_error: #ff0000;
+$color_error_2: #D32323;
+$color_5: #11a1f5;
+$color_6: #595f6e;
+$trans-time: 600ms;
+$width: 390px;
 
 .body {
   font-family: Roboto;
@@ -50,20 +56,26 @@ $color_4: rgba(0, 0, 0, 0.77);
 .bg_7 {
   background-image: url("../asets/about/dengi-pod-zalog-nedvizhimosti.jpg");
 }
+
 .bg_8 {
   background-image: url("../asets/about/brak.jpg");
 }
+
 .bg_9 {
   background-image: url("../asets/about/3255_0d616d856aff9fe0be2cb84eb6ace0be.jpg");
+}
+
+.bg_10 {
+  background-image: url("../asets/about/s1200.jpg");
 }
 
 .content {
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 280px 280px 280px 280px;
+  grid-column-gap: 47px;
 
   &__item {
     position: relative;
@@ -71,7 +83,10 @@ $color_4: rgba(0, 0, 0, 0.77);
     width: 280px;
     height: 350px;
     cursor: pointer;
-    margin-bottom: 50px;
+
+    &_margin {
+      margin-bottom: 50px;
+    }
 
     &:hover {
       .content__hover {
@@ -86,7 +101,7 @@ $color_4: rgba(0, 0, 0, 0.77);
   }
 
   &__body {
-    border-radius: 20px;
+    border-radius: 10px;
     width: 280px;
     height: 100%;
   }
@@ -98,7 +113,7 @@ $color_4: rgba(0, 0, 0, 0.77);
     width: 280px;
     height: 350px;
     background-color: $color_4;
-    border-radius: 20px;
+    border-radius: 10px;
   }
 
   &__img {
@@ -109,7 +124,7 @@ $color_4: rgba(0, 0, 0, 0.77);
     height: 350px;
     display: flex;
     justify-content: center;
-    border-radius: 20px;
+    border-radius: 10px;
   }
 
   &__text {
@@ -117,25 +132,25 @@ $color_4: rgba(0, 0, 0, 0.77);
     margin-top: 50px;
     margin-left: 10px;
   }
-}
 
-.content__title {
-  font-family: Roboto;
-  width: 100%;
-  text-align: center;
-  height: 100%;
-  position: absolute;
-  z-index: 10;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding-bottom: 31px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  color: $color_2;
-  transition: all 1s;
-  text-shadow: 0 4px 4px $color_3;
+  &__title {
+    font-family: Roboto;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 31px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    color: $color_2;
+    transition: all 1s;
+    text-shadow: 0 4px 4px $color_3;
+  }
 }
 
 .item {
@@ -150,6 +165,7 @@ $color_4: rgba(0, 0, 0, 0.77);
 @media screen and ( max-width: 1380px ) {
   .content {
     max-width: 970px;
+    grid-template-columns: 280px 280px 280px;
   }
 }
 
@@ -157,6 +173,7 @@ $color_4: rgba(0, 0, 0, 0.77);
   .content {
     max-width: 670px;
     padding: 0 20px;
+    grid-template-columns: 280px 280px;
   }
 }
 
@@ -166,5 +183,13 @@ $color_4: rgba(0, 0, 0, 0.77);
     display: flex;
     flex-direction: column;
     align-items: center;
+    grid-template-columns: 280px;
   }
+}
+
+// map
+
+#map {
+  margin: 0 auto;
+  margin-bottom: 100px;
 }
