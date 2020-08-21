@@ -76,17 +76,14 @@ $width: 390px;
   display: grid;
   grid-template-columns: 280px 280px 280px 280px;
   grid-column-gap: 47px;
+  grid-row-gap: 50px;
 
   &__item {
     position: relative;
-    border-radius: 10px;
+    border-radius: 5px;
     width: 280px;
     height: 350px;
     cursor: pointer;
-
-    &_margin {
-      margin-bottom: 50px;
-    }
 
     &:hover {
       .content__hover {
